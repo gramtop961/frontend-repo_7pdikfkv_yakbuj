@@ -2,10 +2,19 @@ import Hero from './components/Hero'
 import Features from './components/Features'
 import CTA from './components/CTA'
 import Footer from './components/Footer'
+import Logo from './components/Logo'
 
 function App() {
   return (
     <div className="min-h-screen bg-white text-slate-900">
+      <header className="absolute inset-x-0 top-0 z-20">
+        <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+          <a href="#" className="flex items-center gap-3">
+            <Logo className="h-8 w-auto" />
+          </a>
+        </div>
+      </header>
+
       <Hero />
       <Features />
       <CTA />
