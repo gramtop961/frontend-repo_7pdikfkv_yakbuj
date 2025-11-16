@@ -1,4 +1,4 @@
-import { AppStore } from 'lucide-react'
+import { Apple } from 'lucide-react'
 
 const APP_STORE_URL = 'https://apps.apple.com/us/app/sparkrx200/id6754542156'
 
@@ -24,7 +24,7 @@ export default function Hero() {
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <a href={APP_STORE_URL} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-lg bg-white text-indigo-700 hover:bg-indigo-50 px-5 py-3 font-semibold shadow-lg shadow-black/10 transition">
-                <AppStore className="h-5 w-5" />
+                <Apple className="h-5 w-5" />
                 Download on the App Store
               </a>
               <a href="#features" className="inline-flex items-center gap-2 rounded-lg bg-white/10 hover:bg-white/15 text-white px-5 py-3 font-semibold ring-1 ring-white/20 transition">
