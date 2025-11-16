@@ -1,26 +1,34 @@
-import { useState } from 'react'
+import Hero from './components/Hero'
+import Features from './components/Features'
+import CTA from './components/CTA'
+import Footer from './components/Footer'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 flex items-center justify-center">
-      <div className="bg-white p-8 rounded-lg shadow-lg">
-        <h1 className="text-3xl font-bold text-gray-800 mb-4">
-          Vibe Coding Platform
-        </h1>
-        <p className="text-gray-600 mb-6">
-          Your AI-powered development environment
-        </p>
-        <div className="text-center">
-          <button
-            onClick={() => setCount(count + 1)}
-            className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded"
-          >
-            Count is {count}
-          </button>
+    <div className="min-h-screen bg-white text-slate-900">
+      <Hero />
+      <Features />
+      <CTA />
+      <section id="faq" className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-6">
+          <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 text-center">FAQ</h2>
+          <div className="mt-10 space-y-6">
+            <div className="rounded-xl border border-slate-200 p-6">
+              <h3 className="font-semibold">What is SparkRx200?</h3>
+              <p className="mt-2 text-slate-600">It’s a mobile app designed to help aspiring pharmacy technicians and pharmacy students quickly master brand/generic names, classifications, and indications for commonly tested medications.</p>
+            </div>
+            <div className="rounded-xl border border-slate-200 p-6">
+              <h3 className="font-semibold">Is this for the NAPLEX or technician exams?</h3>
+              <p className="mt-2 text-slate-600">It supports both. The app focuses on top medications and recognition speed that’s useful for NAPLEX‑level review and pharmacy technician certification prep.</p>
+            </div>
+            <div className="rounded-xl border border-slate-200 p-6">
+              <h3 className="font-semibold">Where can I download it?</h3>
+              <p className="mt-2 text-slate-600">You can download SparkRx200 from the iOS App Store. Tap any of the buttons above to get the app.</p>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
+      <Footer />
     </div>
   )
 }
